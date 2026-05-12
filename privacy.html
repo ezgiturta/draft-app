@@ -23,7 +23,7 @@
 <body>
 
 <h1>Privacy Policy</h1>
-<p class="meta">Draft — How to Become a Writer. Last updated: April 23, 2026.</p>
+<p class="meta">Draft — How to Become a Writer. Last updated: May 12, 2026.</p>
 
 <p>This policy describes what information Draft ("the app", "we") collects, how it is used, and your rights as a user. By using Draft you agree to the practices described here.</p>
 
@@ -33,15 +33,19 @@
   <li><strong>Writing content:</strong> the one-sentence pitch you write and any notes or drafts you save stay on your device. When synced for backup, they are stored encrypted in our database (Supabase) tied to your account.</li>
   <li><strong>Usage data:</strong> streak count, session timestamps, and which daily rings you complete. Used to power the streak feature and personalize prompts.</li>
   <li><strong>Subscription status:</strong> whether you have an active subscription, handled by RevenueCat. Apple processes all payments — we never see your card.</li>
-  <li><strong>Device info:</strong> an anonymous device identifier used for fraud detection on free trials.</li>
+  <li><strong>Device and attribution identifiers:</strong> the iOS vendor identifier (IDFV) and, if you grant permission via the App Tracking Transparency prompt, the advertising identifier (IDFA). These are used for marketing attribution (to understand which campaign brought you to Draft) and for fraud detection on free trials.</li>
+  <li><strong>Onboarding analytics:</strong> which onboarding screens you complete and which paywall actions you take, used to measure conversion and improve the flow.</li>
 </ul>
+
+<h2>App Tracking Transparency</h2>
+<p>On first launch, iOS shows the App Tracking Transparency permission prompt asking whether Draft may use your advertising identifier (IDFA) for marketing attribution. If you decline, Draft still works exactly the same — you will not see ads (Draft has no ads at any time) and core features are unaffected. The only difference is that attribution is performed without IDFA, using probabilistic methods provided by our attribution partner.</p>
 
 <h2>What we do NOT collect</h2>
 <ul>
   <li>No location data.</li>
   <li>No contacts, photos, microphone, or camera access.</li>
-  <li>No advertising identifiers. Draft has no ads.</li>
-  <li>No third-party analytics that track you across apps.</li>
+  <li>No advertising. Draft displays no ads, and your data is never sold to advertisers.</li>
+  <li>No reading of other apps on your device.</li>
 </ul>
 
 <h2>How we use it</h2>
@@ -49,6 +53,7 @@
   <li>To run the app: save your progress, deliver daily writing prompts, manage your subscription.</li>
   <li>To send you daily reminders via local push notifications (you can disable in iOS Settings).</li>
   <li>To improve the app: diagnose crashes and fix bugs using Apple's built-in crash reporting.</li>
+  <li>To measure marketing performance: understand which acquisition channels lead people to install Draft, so we know where to invest.</li>
 </ul>
 
 <h2>AI processing</h2>
@@ -60,6 +65,8 @@
   <li><strong>Supabase</strong> — for secure storage of your account and pitch.</li>
   <li><strong>RevenueCat</strong> — for subscription management.</li>
   <li><strong>Anthropic</strong> — for AI-generated writing prompts.</li>
+  <li><strong>Adjust</strong> — for marketing attribution. Adjust receives your IDFV and, if you grant App Tracking Transparency permission, your IDFA, along with install and event timestamps.</li>
+  <li><strong>Scate</strong> — for onboarding funnel analytics. Scate receives anonymized event names (e.g. which onboarding screen you reached) tied to a device identifier.</li>
   <li><strong>Apple</strong> — for payment processing and app delivery.</li>
 </ul>
 
